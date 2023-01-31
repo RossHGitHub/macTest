@@ -9,18 +9,22 @@ const defaultScreen=()=>{
 blankMsg.innerHTML='You have no projects right now.'
 main.appendChild(blankMsg);
 
-    const createNew = document.createElement('button');
-    createNew.innerHTML='Create Project';
-    main.appendChild(createNew);
-    createNew.addEventListener('click', createProject());
-
+createNewBtn();
     }
 
-    const createProject = () =>{
-
-        
+    
+    const createNewBtn=()=>{
+       let createNewButton = document.createElement('button');
+       createNewButton.setAttribute('id', 'createProject');
+    createNewButton.innerHTML='Create Project';
+    main.appendChild(createNewButton);
     }
 
-    return {createDefaultElements}
+    const clear =()=>{
+        main.innerHTML='';
+    }
+
+
+    return {createDefaultElements, clear}
 
 }
