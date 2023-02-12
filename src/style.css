@@ -1,0 +1,156 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+background-color: rgb(202, 216, 227);
+display: flex;
+flex-direction: column;
+}
+
+.header{
+    background-color: rgb(24, 24, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100vw;
+    border-bottom: 4px solid white;
+}
+
+.mainHeader{
+    color: white;
+}
+
+.mainWrapper{
+    flex: 1 1 auto;
+    display: flex
+}
+.sidebar{
+    background-color: antiquewhite;
+    max-width: 400px;
+    flex: 1 1 auto;
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listHeader{
+}
+
+
+
+.listy{
+    background-color: rgb(250, 234, 215);
+    border-radius: 4px;
+    letter-spacing: 2px;
+    margin: 6px 35px 6px 6px;    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    list-style: none;
+    display: block;
+}
+
+.listy:hover{
+    border-color: rgb(221, 225, 200);
+    cursor: pointer;
+}
+
+
+.mainWrap{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pageTitle{
+    height: 40px;
+    width: auto;
+    font-weight: 600;
+    margin: 20px 0 300px 0px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.modalWrapper{
+
+    height: 100px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 5px 2px 25px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.modalCloseButton{
+    color: white;
+    background-color: red;
+    border-radius: 10%;
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+}
+
+#newProject{
+    margin-top: 40px;
+}
+
+.itemInputWrapper{
+
+    height: 500px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 5px 2px 25px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 60px;
+    position: absolute;
+    
+}
+
+#itemInfoCloseButton{
+    color: white;
+    background-color: red;
+    border-radius: 10%;
+    margin: 20px 0px 0px 430px;
+}
+
+.modalPriority{
+    width: 80px;
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+}
+
+#projectInfo{
+    
+    width: 350px;
+    height: 100px;
+}
+
+#itemInputConfirmButton{
+    margin: 0 0 20px 350px;
+}
